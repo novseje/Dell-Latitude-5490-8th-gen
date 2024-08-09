@@ -1,11 +1,21 @@
-# Dell Latitude 5490 and 5590 OpenCore 0.8.1
-
- Dell Latitude 5490 and 5590
-
-Tested to clean Install Mojave, Catalina, Big Sir, and Monterey
-my wifi card is BCM94360ng (5490) and Intel 8265ngw (5590)
+# Dell Latitude 5490, Sonoma 14.6
 
 please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, im using MacBookPro15,2 SMBIOS. But you can use any SMBIOS from MBP14,1 through MBP16,1
+
+## System information
+
+| Specifications      | Details                                                                                       |
+|:--------------------|:----------------------------------------------------------------------------------------------|
+| Computer model      | Dell Latitude 5490                                                                            |
+| Processor           | Intel Core i5-8250U Processor @ 1.6 GHz                                                       |
+| Memory              | 32GB (2x16GB) Samsung DDR4 2400MHZ (M471A2K43BB1-CRC)                                         |
+| Hard Disk           | SSD WD Blue SN570 500GB (NVME slot),<br/>SSD Transcend MTS430S 512GB M.2 SATA III (WWAN slot) |
+| Integrated Graphics | Intel(R) UHD Graphics 620                                                                     |
+| Screen              | Display @ 1920 x 1080 (13.9 inch)                                                             |
+| Sound Card          | Realtek ALC256                                                                                |
+| Wireless Card       | Intel 8265NGW                                                                                 |
+| Bluetooth Card      | Intel 8265NGW                                                                                 |
+| Ethernet            | I219-LM Intel Ethernet                                                                        |
 
 
 # Guides and sources:
@@ -15,21 +25,6 @@ I followed [Dortania's OpenCore Guide](https://dortania.github.io/)
 Then also took some files from [franklin-gedler repo](https://github.com/franklin-gedler/Dell-Latitude-7490-OpenCore-Big-Sur)
 
 Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Little-Translated)
-
-
-# My Specs:
-
-- Model Make: Dell Latitude 5490/5590
-
-- CPU/GPU: Intel i5-8350u (5490) and i5-8250u (5590)/Intel UHD Graphics 620
-
-- DRAM: 32GB (2x16GB) 2400MHZ DDR4 RAM on 5590, the 5490 has 24GB (16GB+8GB)
-
-- Storage: 1TB MX500 Crucial SSD 2.5" (Files) (sata port) + 256GB WD SN520 NVME 2242 (Windows) (via wwan slot) + 1TB Crucial P5 2280 (nvme slot) (MacOS-Catalina, Big Sur and Monterey)
-
-- Connections: BCM94360ng/Intel 8265ngw BT+Wifi card - I219-LM Intel Ethernet
-
-- 3x USB 3.1 Gen1 (one with PowerShare) - DisplayPort over USB Type-C(optional Thunderbolt 3(1)
 
 
 # What works on MacOS:
