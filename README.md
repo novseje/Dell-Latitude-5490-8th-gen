@@ -1,6 +1,6 @@
 # Dell Latitude 5490, Sonoma 14.6
 
-please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, im using MacBookPro15,2 SMBIOS. But you can use any SMBIOS from MBP14,1 through MBP16,1
+Please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, im using MacBookPro15,2 SMBIOS. But you can use any SMBIOS from MBP14,1 through MBP16,1
 
 ## System information
 
@@ -20,14 +20,10 @@ please add your own PLATFORM INFO, with https://github.com/corpnewt/GenSMBIOS, i
 
 # Guides and sources:
 
-I followed [Dortania's OpenCore Guide](https://dortania.github.io/)
-
-Then also took some files from [franklin-gedler repo](https://github.com/franklin-gedler/Dell-Latitude-7490-OpenCore-Big-Sur)
-
-Last I followed [OC Little Translated by 5T33Z0](https://github.com/5T33Z0/OC-Little-Translated)
+More detailed description you can view in the source repository [juanpy0223/Dell-Latitude-5490-8th-gen](https://github.com/juanpy0223/Dell-Latitude-5490-8th-gen)
 
 
-# What works on MacOS:
+# What works on MacOS (*need to check all*):
 
 - KeyBoard+Trackpad full (SSDT-GPI0.aml + AlpsHID.kext,VooDooI2C.kext,VooDooI2cHID.kext, VooDooPS2Controller.kext, NoTouchID.kext)
 
@@ -76,7 +72,7 @@ SecureBoot = Disable
 
 SATA Mode: AHCI 
 
-Intel SGX: Software Controlled
+Intel SGX: Disable
 
 # Now we start the pendrive and select modGRUBShell.efi or OpenShell.efi (Be carefull with the commands):
 
@@ -109,40 +105,7 @@ VT-d = Disable
     VarStore: 0x1
     Name: Setup
     
-    Command for modGRUBShell.efi: setup_var_cv Setup 0x808 0x1 0x0
+    Command for modGRUBShell.efi: setup_var_cv Setup 0x808 0x1 0x0 
     
-    
-    After this we can reboot and then install.
-    
-    
-    
-# Battery Life History:
-    
-Lenovo X220t, T440s, t450s, E570 - High Sierra, Mojave, Catalina and Big Sur - 1 hour to 1.5 hours
+After this we can reboot and then install.
 
-Dell Latitude 5490/5590 - Catalina, Big Sur and Monterey - 2 to 2.5 hours
-
-
-# I took my time with the Dell Latitude 15 5590:
-
-a) Replaced the 68whr battery with a 92whr one.
-b) Followed the guide above, to make macOS think that is runnig on real macbookpro15,1 screen shot
-c) Tested 4 differents macOS versiones beggining in Mojave. these are the results on Battery Life:
-
-- Mojave 10.4.1 - 10.14.6 Office Work (Word and PowerPoint), Video Watching and Internet Surfing 3.5 to 4 hours
-- Catalina 10.15.3 - 10.15.7 Office Work (Word and PowerPoint), Video Watching and Internet Surfing 4 to 4.5 hours
-- Big Sur 11.0.1 - 11.6.5 Office Work (Word and PowerPoint), Video Watching and Internet Surfing 5 hours on 11.2.3-11.6.5 and 6-6.5 hours on 11.0.1
-- Monterey 12.0.1 - 12.4 Office Work (Word and PowerPoint), Video Watching and Internet Surfing 7 hours on 12.1-12.4 , 12 to 15 hours on 12.0.1
-- Windows 10 21H2   7 hous
-
-* it seems to me that with time, systems are more energy efficient....
-Also Monterey gave me more battery options:
-
-- "Slightly dim the display while on battery power"
-- "Optimize video streaming while on battery"
-- "Optimize battery charging"
-- "Low power mode"
-
-Also a Dell Technician told me, that Dell Laptops board internal drivers, play better with Kingston and Crucial RAM and with Crucial NVME and SATA SSDs, so I install 2x16gb Crucial 2400mhz DDR4 sodimm RAM modules, 1x1tb mx500 crucial sata ssd and 1tb P5 crucial nvme ssd (Crucial advertises 40% less power consumption).
-
-I hope this information helps.... if you have the same model...
