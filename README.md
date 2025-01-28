@@ -9,12 +9,12 @@
 | Computer model      | Dell Latitude 5490                                                                            |
 | Processor           | Intel Core i5-8350U Processor @ 1.7 GHz                                                       |
 | Memory              | 32GB (2x16GB) Samsung DDR4 2400MHZ (M471A2K43BB1-CRC)                                         |
-| Hard Disk           | SSD WD Blue SN570 500GB (NVME slot),<br/>SSD Transcend MTS430S 512GB M.2 SATA III (WWAN slot) |
+| Hard Disk           | SSD WD Blue SN570 500GB (NVME slot),<br/>SSD WD PC SN520 512GB (WWAN slot) |
 | Integrated Graphics | Intel(R) UHD Graphics 620                                                                     |
 | Screen              | Display @ 1920 x 1080 (13.9 inch)                                                             |
 | Sound Card          | Realtek ALC256                                                                                |
-| Wireless Card       | Intel 8265NGW                                                                                 |
-| Bluetooth Card      | Intel 8265NGW                                                                                 |
+| Wireless Card       | Intel 9260NGW                                                                                 |
+| Bluetooth Card      | Intel 9260NGW                                                                                 |
 | Ethernet            | I219-LM Intel Ethernet                                                                        |
 
 
