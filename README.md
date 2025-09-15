@@ -4,18 +4,18 @@
 
 ## System information
 
-| Specifications      | Details                                                                                       |
-|:--------------------|:----------------------------------------------------------------------------------------------|
-| Computer model      | Dell Latitude 5490                                                                            |
-| Processor           | Intel Core i5-8350U Processor @ 1.7 GHz                                                       |
-| Memory              | 32GB (2x16GB) Samsung DDR4 2400MHZ (M471A2K43BB1-CRC)                                         |
-| Hard Disk           | SSD WD Blue SN570 500GB (NVME slot),<br/>SSD WD PC SN520 512GB (WWAN slot) |
-| Integrated Graphics | Intel(R) UHD Graphics 620                                                                     |
-| Screen              | Display @ 1920 x 1080 (13.9 inch)                                                             |
-| Sound Card          | Realtek ALC256                                                                                |
-| Wireless Card       | Intel 9260NGW                                                                                 |
-| Bluetooth Card      | Intel 9260NGW                                                                                 |
-| Ethernet            | I219-LM Intel Ethernet                                                                        |
+| Specifications      | Details                                                                                               |
+|:--------------------|:------------------------------------------------------------------------------------------------------|
+| Computer model      | Dell Latitude 5490                                                                                    |
+| Processor           | Intel Core i5-8350U Processor @ 1.7 GHz                                                               |
+| Memory              | 32GB (2x16GB) Samsung DDR4 2400MHZ (M471A2K43BB1-CRC)                                                 |
+| Hard Disk           | SSD WD Blue SN570 500GB (NVME slot),<br/>SSD WD PC SN520 512GB (WWAN slot), <br/>SSD SK Hynix SATA (080RK8 HDD Cable) |
+| Integrated Graphics | Intel(R) UHD Graphics 620                                                                             |
+| Screen              | Display @ 1920 x 1080 (13.9 inch)                                                                     |
+| Sound Card          | Realtek ALC256                                                                                        |
+| Wireless Card       | Intel 9260NGW                                                                                         |
+| Bluetooth Card      | Intel 9260NGW                                                                                         |
+| Ethernet            | I219-LM Intel Ethernet                                                                                |
 
 
 # Guides and sources:
@@ -80,7 +80,7 @@ After this we can reboot and then install.
 
 - KeyBoard+Trackpad full (SSDT-GPI0.aml + AlpsHID.kext,VooDooI2C.kext,VooDooI2cHID.kext, VooDooPS2Controller.kext, NoTouchID.kext)
 
-- Graphics Full Aceleration, VGA and HDMI (Plug.aml, Lilu.kext, VirtualSMC.kext, WhateverGreen.kext)
+- Graphics Full Aceleration, VGA and HDMI (Plug.aml, Lilu.kext, VirtualSMC.kext, WhateverGreen.kext).<br>__External monitor not working at 4K resolution. Need to fix.__
 
 - A type USB USB Port Map kext, USB-C | DP DisplayPort - (USB Port Map kext + SSDT-EC-USBX-LAPTOP.aml + Graphic Patch)
 
